@@ -40,37 +40,37 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row mt-1">
-				<div class="col">
-				</div>
-				<div class="col-sm-10">
-					<h1 style="font-weight: 100">//repos</h1>
-					{% for i in range(repos_count) %}
-						{% set k = repos_count - i -1 %}
-						<div class="row mt-3">
-							<div class="card" style="background-color: inherit; border-color: inherit;">
-								<div class="card-body">
-									<h5 class="card-title"><i data-feather="book"></i> {{ repos[k]['name'] }} {% if repos[k]['fork'] == True %} (fork) {% endif %}</h5>
-									<p class="card-text">{{ repos[k]['description'] }}</p>
-									<p class="card-text"><span style="margin-right: 5px"><i data-feather="star" style="color: yellow"></i> {{ repos[k]['stargazers_count'] }} </span><span style="margin-right: 5px"><i data-feather="heart" style="color:red;"></i> {{ repos[k]['forks_count'] }}</span><span><a href="{{ repos[k]['html_url'] }}" class="btn btn-primary" target="_blank" style="float: right;"><i data-feather="link-2"></i></a></span></p>
-									
+		{% if data.public_repos %}
+			<div class="container">
+				<div class="row mt-1">
+					<div class="col">
+					</div>
+					<div class="col-sm-10">
+						<h1 style="font-weight: 100">//repos</h1>
+						{% for i in range(repos_count) %}
+							{% set k = repos_count - i -1 %}
+							<div class="row mt-3">
+								<div class="card" style="background-color: inherit; border-color: inherit;">
+									<div class="card-body">
+										<h5 class="card-title"><i data-feather="book"></i> {{ repos[k]['name'] }} {% if repos[k]['fork'] == True %} (fork) {% endif %}</h5>
+										<p class="card-text">{{ repos[k]['description'] }}</p>
+										<p class="card-text"><span style="margin-right: 5px"><i data-feather="star" style="color: yellow"></i> {{ repos[k]['stargazers_count'] }} </span><span style="margin-right: 5px"><i data-feather="heart" style="color:red;"></i> {{ repos[k]['forks_count'] }}</span><span><a href="{{ repos[k]['html_url'] }}" class="btn btn-primary" target="_blank" style="float: right;"><i data-feather="link-2"></i></a></span></p>
+										
+									</div>
 								</div>
 							</div>
-						</div>
-					{% endfor %}
-				</div>
-				<div class="col">
+						{% endfor %}
+					</div>
+					<div class="col">
+					</div>
 				</div>
 			</div>
-		</div>
+		{% endif %}
 	</body>
 	<footer class="text-center text-lg-start mt-5">
-		<!-- Copyright -->
 		<div class="text-center p-3">
 			Coded with <i data-feather="heart" style="color:red;"></i>
 		</div>
-		<!-- Copyright -->
 	</footer>
 	<script>
 		feather.replace()
