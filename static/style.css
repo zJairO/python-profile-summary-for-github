@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: black;  /* fallback for old browsers */
+	color: white;
+}
+
+.indextitle {
+	font-size: 30px;
+	font-weight: 400;
+	color: white;
+}
+.whitelinks {		
+	color: inherit; /* blue colors for links too */
+	text-decoration: inherit; /* no underline */
+}
+.whiteborder {
+	border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem; 
+}
