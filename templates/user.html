@@ -17,7 +17,7 @@
 							<img src="{{ data.avatar_url }}" class="rounded-circle mx-auto d-block" style="max-width: 200px">
 						</div>
 						<div class="col-sm my-auto">
-							<p><i data-feather="user"></i> {{ data.login }} (<a href="{{ data.html_url }}" class="whitelinks" target="_blank">@{{ data.name }}</a>)</p>
+							<p><i data-feather="user"></i> {{ data.name }} (<a href="{{ data.html_url }}" class="whitelinks" target="_blank">@{{ data.login }}</a>)</p>
 							{% if data.bio != None %}
 								<p><i data-feather="coffee"></i> {{ data.bio }} </p>
 							{% endif %}
