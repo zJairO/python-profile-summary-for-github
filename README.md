@@ -6,7 +6,7 @@
 - pip install -r requirements.txt
 - Run the project  🐱‍💻
 
-Screenshot:
+### Screenshot:
 ![ScreenShot](https://i.imgur.com/puLbfmW.png)
 
-[Preview](https://py-profile-summary-for-github.herokuapp.com/)
+### [Preview](https://py-profile-summary-for-github.herokuapp.com/)
