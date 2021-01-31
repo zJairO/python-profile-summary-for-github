@@ -7,6 +7,6 @@
 - Run the project  🐱‍💻
 
 ### ScreenShot
-(https://i.imgur.com/puLbfmW.png)
+![ScreenShot](https://i.imgur.com/puLbfmW.png)
 
 [Preview](https://py-profile-summary-for-github.herokuapp.com/)
