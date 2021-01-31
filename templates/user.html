@@ -1,11 +1,4 @@
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-	</head>
+{% include 'head.html' %}
 	<body>
 		<div class="container">
 			<div class="row mt-5">
@@ -67,12 +60,4 @@
 			</div>
 		{% endif %}
 	</body>
-	<footer class="text-center text-lg-start mt-5">
-		<div class="text-center p-3">
-			Coded with <i data-feather="heart" style="color:red;"></i>
-		</div>
-	</footer>
-	<script>
-		feather.replace()
-	</script>
-</html>
+{% include 'footer.html' %}
